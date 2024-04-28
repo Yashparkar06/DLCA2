@@ -1,0 +1,3 @@
+output:
+# Enter a sentence:  The quick brown fox jumps over the lazy dog.
+# [('VOWEL', 'e'), ('VOWEL', 'u'), ('VOWEL', 'i'), ('VOWEL', 'o'), ('VOWEL', 'o'), ('VOWEL', 'u'), ('VOWEL', 'o'), ('VOWEL', 'e'), ('VOWEL', 'e'), ('VOWEL', 'a'), ('VOWEL', 'o')]

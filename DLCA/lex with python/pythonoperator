@@ -1,0 +1,21 @@
+import re
+
+def lex(pattern):
+    tokens = []
+    
+    # Regular expression pattern to match operators
+    operator_pattern = r'[\+\-\*/]'
+    
+    for match in re.finditer(operator_pattern, pattern):
+        op = match.group()
+        tokens.append(('OPERATOR', op))
+    
+    return tokens
+
+ip = input("Enter an expression with operators (+, -, *, /): ")
+op = lex(ip)
+print(op)
+
+# output:
+# Enter an expression with operators (+, -, *, /):  12 + 27 - 45 * 46 / 69
+# [('OPERATOR', '+'), ('OPERATOR', '-'), ('OPERATOR', '*'), ('OPERATOR', '/')]

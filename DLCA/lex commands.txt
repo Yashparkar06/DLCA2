@@ -1,0 +1,7 @@
+install flexgnu win 32
+install mingw
+set environment vairables for both
+run file using command
+flex filename.l
+next lex.yy.c
+for output a.exe

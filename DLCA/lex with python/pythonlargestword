@@ -1,0 +1,13 @@
+import re 
+
+def largest(words):
+    word = re.findall(r'\b\w+\b', words)
+    largest_word = max(word, key=len)
+    return largest_word
+
+ip = input("Enter a sentence: ")
+print(largest(ip))
+
+# output:
+# Enter a sentence:  This is a sample text with several words of different lengths.
+# different
